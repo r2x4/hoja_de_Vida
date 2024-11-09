@@ -1,0 +1,178 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f1fa;
+}
+
+/* header */
+header {
+    background-color: #e6f1fa;
+    color: rgb(7, 7, 7); 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #161616;
+    margin: 10px 0;
+}
+
+/* Contenedor principal  */
+.container {
+    display: flex;
+    margin: 20px;
+    height: auto;
+}
+
+/*Izquierda = contenido */
+.sidebar {
+    width: 20%;  
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.sidebar h4 {
+    color: #555;
+}
+
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+.contact-info {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* derecha = contenido */
+.main-content {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primera {
+    margin-top: 0;
+}
+
+h2, h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+span {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Formación Académica */
+.formacion-academica {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.formacion-academica {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+.formacion-academica h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.formacion-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+.formacion-line .left {
+    text-align: left;
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.formacion-line .right {
+    text-align: left;  
+    flex: 1; 
+}
+
+.formacion-line span {
+    display: block;  
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 5px; 
+}
+
+.formacion-line .left span,
+.formacion-line .right span {
+    text-align: left; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
